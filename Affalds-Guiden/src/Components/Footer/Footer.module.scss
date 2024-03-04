@@ -1,0 +1,35 @@
+.footer {
+    color: var(--white);
+    background-color: var(--greenBlue);
+    padding: 40px;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    p {
+        color: var(--fadedWhite);
+    }
+
+    h3 {
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+    }
+
+}

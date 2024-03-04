@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { Navigation } from '../Components/Navigation/Navigation';
-
+import { Footer } from '../Components/Footer/Footer';
 export function MainLayout() {
 
     // Her skal der ligge det som skal vises alle pages
@@ -8,8 +8,9 @@ export function MainLayout() {
 
     return (
         <>
-        <Navigation/>
-        <Outlet/>
+            <Navigation />
+            <Outlet />
+            <Footer />
         </>
 
     )

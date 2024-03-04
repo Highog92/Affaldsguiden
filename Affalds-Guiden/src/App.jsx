@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
- <BrowserRouter> {/* Route containeren der wrapper de forskellige ruter */}
+      <BrowserRouter> {/* Route containeren der wrapper de forskellige ruter */}
         <Routes>{/* Top level component der lytter på hvad der er i url'en */}
           <Route path="/" element={<MainLayout title='Homepage' />}>{/* selve ruten */}
             {/* De to tomme paths=("/") er en nødvendighed ellers bliver det første man ser en blank outlet */}

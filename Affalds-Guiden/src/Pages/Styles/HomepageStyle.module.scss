@@ -1,0 +1,22 @@
+.homePage {
+    // display: flex;
+    // flex-direction: row;
+    // justify-items: center;
+    // align-items: center;
+
+}
+
+.findStations {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightGreen);
+    height: 200px;
+    width: 600px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin: 20px;
+    }
+}

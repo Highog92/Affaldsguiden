@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    /* colors */
+    --dark: #2B2C2E;
+    --white: #fff;
+    --lightBlue: #017EC0;
+    --darkBlue: #004679;
+    --brown: #C4A167;
+    --darkBrown: #7F652B;
+    --green: #28A745;
+    --darkGreen: #06682D;
+    --greenBlue: #114D46;
+    --red: #E30620;
+    --bordeaux: #951C3F;
+    --orange: #F18700;
+    --grey: #607179;
+
+    /* //fonts */
+    --navigation: "Mulish", serif;
+    --text: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    scroll-behavior: smooth;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+}
+

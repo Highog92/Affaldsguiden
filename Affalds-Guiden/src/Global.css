@@ -10,7 +10,7 @@
     --darkBlue: #004679;
     --brown: #C4A167;
     --darkBrown: #7F652B;
-    --lightGreen:#lightgreenD8EADB;
+    --lightGreen: #D8EADB;
     --green: #28A745;
     --darkGreen: #06682D;
     --greenBlue: #114D46;
@@ -21,7 +21,7 @@
 
     /* //fonts */
     --navigation: "Mulish", serif;
-    --text: "Open Sans", sans-serif;
+    --text: Open Sans, Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -32,6 +32,5 @@
 
 body {
     scroll-behavior: smooth;
-    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    font-family: Open Sans;
 }
-

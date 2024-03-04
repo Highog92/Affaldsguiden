@@ -1,9 +1,11 @@
 .homePage {
-    // display: flex;
-    // flex-direction: row;
-    // justify-items: center;
-    // align-items: center;
 
+    font-family: var(--text);
+
+    img {
+        border-radius: 10px;
+        width: 100%;
+    }
 }
 
 .findStations {
@@ -15,8 +17,47 @@
     border-radius: 15px;
     align-items: center;
     justify-content: center;
+    margin: auto;
 
-    p {
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    button {
+        gap: 20px;
+    }
+
+    h2 {
         margin: 20px;
     }
+}
+
+.sortingGuide {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: center;
+
+    article {
+        margin: 30px 0;
+    }
+
+    h2,
+    p {
+        padding: 20px 0;
+    }
+
+    button {
+        gap: 20px;
+        margin: 30px 0;
+    }
+
+    img{
+        width: 25%;
+        margin: 20px;
+    }
+
 }

@@ -80,8 +80,6 @@ export function Homepage() {
 
         </section>
       </section>
-
-      <img src={wave} alt="background Waves" />
     </section>
   )
 }

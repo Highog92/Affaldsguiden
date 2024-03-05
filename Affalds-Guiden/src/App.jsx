@@ -6,6 +6,9 @@ import { Sorting } from './Pages/Sorting';
 import { RecyclingStations } from './Pages/RecyclingStations';
 import { OrderContainer } from './Pages/OrderContainer';
 import { Login } from './Pages/Login';
+import { SearchPage } from './Pages/SearchPage';
+import { SortingDetailsPage } from './Pages/SortingDetailsPage';
+
 function App() {
 
   return (
@@ -14,12 +17,18 @@ function App() {
         <Routes>{/* Top level component der lytter på hvad der er i url'en */}
           <Route path="/" element={<MainLayout title='Homepage' />}>{/* selve ruten */}
             {/* De to tomme paths=("/") er en nødvendighed ellers bliver det første man ser en blank outlet */}
-            <Route path="/" element={<Homepage title="Homepage" />} />
+            <Route index element={<Homepage title="Homepage" />} />
             <Route path="/homepage" element={<Homepage title="Homepage" />} />
-            <Route path="/sorting" index element={<Sorting title='Sorting' />} />
-            <Route path="/recyclingstations" index element={<RecyclingStations title='Recycling stations' />} />
-            <Route path="/ordercontainer" index element={<OrderContainer title='Order Container' />} />
-            <Route path="/login" index element={<Login title='Login' />} />
+
+            <Route path="/sorting" element={<Sorting title='Sorting' />} />
+            <Route path="/sorting/:sortingId" element={<SortingDetailsPage title='Sorting Details' />} />
+            
+            <Route path="/recyclingstations" element={<RecyclingStations title='Recycling stations' />} />
+            <Route path="/ordercontainer" element={<OrderContainer title='Order Container' />} />
+            <Route path="/login" element={<Login title='Login' />} />
+            
+            <Route path="/searchpage/:searchWord" element={<SearchPage />} />
+            <Route path="/searchpage" element={<SearchPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

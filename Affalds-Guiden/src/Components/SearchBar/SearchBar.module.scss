@@ -1,0 +1,36 @@
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+    input {
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 10px;
+        border: none;
+        margin: 10px;
+        padding-right: 30px;
+        filter: drop-shadow(0px 5px 10px #000000);
+    }
+
+    img {
+        position: absolute;
+        right: 60px;
+        top: 70%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        fill: #333;
+    }
+}
+
+
+
+
+
+.svg-icon {}

@@ -3,6 +3,7 @@
     background-color: var(--white);
     margin: 30px;
     font-family: var(--navigation);
+
     nav {
         display: flex;
         flex-direction: row;
@@ -12,6 +13,7 @@
 
     img {
         width: 100%;
+        margin: 10px;
     }
 
 
@@ -23,22 +25,18 @@
         align-items: center;
     }
 
-
+    li{
+        list-style-type: none;
+    }
     a {
         display: flex;
         text-decoration: none;
         align-items: center;
-        color: var(--darkgrey);
+
     }
 
     a:hover {
-        color: var(--gold);
-    }
-
-    label {
-        display: flex;
-        flex-direction: row;
-        // position: relative;
+        color: var(--green);
     }
 
 }

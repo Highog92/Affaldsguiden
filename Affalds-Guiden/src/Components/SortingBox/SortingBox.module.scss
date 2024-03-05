@@ -1,8 +1,10 @@
 .sortingBox {
     display: grid;
     border-radius: 10px;
-    margin: 50px;
+    margin: 40px;
     color: var(--white);
+    transition: all 0.5s ease-in-out;
+
     div {
         display: flex;
         height: 60px;
@@ -10,11 +12,17 @@
         justify-content: center;
         align-items: center;
         border-radius: 0 0 10px 10px;
-
     }
 
     img {
         width: 100%;
         border-radius: 10px 10px 0 0;
     }
+
+
+}
+
+.sortingBox:hover {
+    filter: drop-shadow(0px 5px 15px #28A745);
+
 }

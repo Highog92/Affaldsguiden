@@ -2,14 +2,13 @@ import { SlideShow } from "../Components/SlideShow/SlideShow"
 import { Button } from "../Components/Button/Button"
 import HomepageStyle from './Styles/HomepageStyle.module.scss'
 import { Link } from 'react-router-dom';
-import sortingGuide from '../assets/Images/Photos/small/guide-til-affaldssortering.jpg'
-import wave from '../assets/Images/Layout/bg-waves-1.svg'
-
+import sortingGuide from '../assets/Images/Photos/small/skrald2.jpg'
+import orderContainer from '../assets/Images/Photos/small/containers.jpg'
 export function Homepage() {
 
 
   return (
-    <section className={HomepageStyle.homePage}>
+    <main className={HomepageStyle.homePage}>
       <SlideShow />
 
       <figure className={HomepageStyle.findStations}>
@@ -80,6 +79,6 @@ export function Homepage() {
 
         </section>
       </section>
-    </section>
+    </main>
   )
 }

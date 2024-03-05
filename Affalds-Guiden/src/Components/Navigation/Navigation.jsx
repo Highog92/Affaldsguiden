@@ -8,14 +8,14 @@ export function Navigation() {
         <section className={navStyle.navigation}>
             <nav>
                 {/* Link er bare et <a> tag */}
-                <Link to='/homepage'><img src={logo} alt="Det utrolige teater" /><li>Affaldsguiden</li></Link>
+                <Link to='/homepage'><img src={logo} alt="Det utrolige teater" /><li><h1>Affaldsguiden</h1></li></Link>
                 <ul>
                     <Link to='/homepage'><li>Forside</li></Link>
                     <Link to='/sorting'><li>Sortering</li></Link>
                     <Link to='/recyclingstations'><li>Genbrugsstationer</li></Link>
                     <Link to='/ordercontainer'><li>Bestil beholder</li></Link>
-                </ul>
                     <Link to='/login'><img src={loginIcon} alt="Login ikon" /></Link>
+                </ul>
             </nav>
         </section>
     )

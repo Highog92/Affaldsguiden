@@ -33,3 +33,18 @@
     }
 
 }
+
+@media (max-width: 375px) {
+
+    .footer {
+
+        ul {
+            flex-direction: column;
+            align-items: start;
+        }
+
+        button {
+            width: 100;
+        }
+    }
+}

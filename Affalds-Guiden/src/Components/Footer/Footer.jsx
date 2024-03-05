@@ -2,7 +2,7 @@ import footerStyle from './Footer.module.scss'
 import { Button } from '../Button/Button'
 import arrowUpIcon from '../../assets/Svgs/ArrowUp.svg'
 import logoWhite from '../../assets/Svgs/Logo-White.svg'
-
+import ScrollToTop from "react-scroll-to-top";
 export function Footer() {
 
     return (
@@ -20,13 +20,8 @@ export function Footer() {
             <ul>
                 <p>©2023 Affaldsguiden. </p>
                 <li>
-                    <Button
-                        text={"Back to top"}
-                        bgColor={"var(--greenBlue)"}
-                        txtColor={"var (--fadedWhite)"}
-
+                    <ScrollToTop smooth
                     />
-                    <img src={arrowUpIcon} alt="back to top" />
                 </li>
             </ul>
 

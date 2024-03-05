@@ -8,33 +8,33 @@ export function Homepage() {
 
 
   return (
-    <main className={HomepageStyle.homePage}>
+    <main className={HomepageStyle.homepage}>
       <SlideShow />
 
       <figure className={HomepageStyle.findStations}>
         <figcaption>
           <h2>Find og anmeld genbrugsstationer</h2>
           <div>
-
             <Link to='/recyclingstations'>
               <Button
                 text="Find station"
                 bgColor="var(--greenBlue)"
                 sizeW={"120px"}
                 sizeH={"50px"}
-
               />
             </Link>
             <Link to='/login'>
               <Button
                 text="Log ind"
                 bgColor="var(--greenBlue)"
-
+                sizeW={"120px"}
+                sizeH={"50px"}
               />
             </Link>
           </div>
         </figcaption>
       </figure>
+
       <section>
         <section className={HomepageStyle.sortingGuide}>
           <article>
@@ -54,7 +54,7 @@ export function Homepage() {
               text={'Bestilt storskrald'}
               bgColor={'var(--white)'}
               txtColor={'var(--green)'}
-              borderColor={'var(--fadedWhite)'} />
+              border={'1px solid'} />
           </article>
 
           <img src={sortingGuide} alt="affald" />
@@ -62,7 +62,7 @@ export function Homepage() {
 
 
         <section className={HomepageStyle.sortingGuide}>
-          <img src={sortingGuide} alt="affald" />
+          <img src={orderContainer} alt="affald" />
           <article>
 
             <h2>Bestil din nye affaldsbeholder</h2>
@@ -75,6 +75,7 @@ export function Homepage() {
             <Button
               text={'Bestil nu'}
               bgColor={'var(--greenBlue)'} />
+
           </article>
 
         </section>

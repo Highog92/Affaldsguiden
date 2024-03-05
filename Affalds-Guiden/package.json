@@ -14,7 +14,8 @@
     "react-accessible-accordion": "^5.0.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.0",
-    "react-material-ui-carousel": "^3.4.2"
+    "react-material-ui-carousel": "^3.4.2",
+    "react-scroll-to-top": "^3.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",

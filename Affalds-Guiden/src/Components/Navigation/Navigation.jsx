@@ -8,7 +8,7 @@ export function Navigation() {
         <section className={navStyle.navigation}>
             <nav>
                 {/* Link er bare et <a> tag */}
-                <Link to='/homepage'><img src={logo} alt="Det utrolige teater" /><li><h1>Affaldsguiden</h1></li></Link>
+                <Link to='/homepage'><img src={logo} alt="Affaldsguiden" /><li><h1>Affaldsguiden</h1></li></Link>
                 <ul>
                     <Link to='/homepage'><li>Forside</li></Link>
                     <Link to='/sorting'><li>Sortering</li></Link>

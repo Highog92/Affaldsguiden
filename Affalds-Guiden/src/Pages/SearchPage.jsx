@@ -17,6 +17,7 @@ export function SearchPage() {
         <section className={searchPageStyle.searchPage}>
             <SearchBar />
 
+            {/* Af GPT */}
             {searchResult && searchResult.data && searchResult.data.map((item) => (
 
                 <SearchCard

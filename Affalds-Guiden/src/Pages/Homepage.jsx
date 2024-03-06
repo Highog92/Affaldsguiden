@@ -4,6 +4,8 @@ import HomepageStyle from './Styles/HomepageStyle.module.scss'
 import { Link } from 'react-router-dom';
 import sortingGuide from '../assets/Images/Photos/small/skrald2.jpg'
 import orderContainer from '../assets/Images/Photos/small/containers.jpg'
+import Lines from '../assets/Svgs/Lines.svg'
+
 export function Homepage() {
 
 
@@ -35,17 +37,14 @@ export function Homepage() {
         </figcaption>
       </figure>
 
-      <section>
-        <section className={HomepageStyle.sortingGuide}>
-          <article>
 
-            <h2>Din guide til sortering</h2>
-            <p>
-              Her kan du se hvordan du skal sortere og hvad der skal i hvilke beholdere.
-            </p>
-            <p>
-              Du får også tips og tricks til, hvordan du gør det nemt at sortere hjemme hos dig.
-            </p>
+      <section className={HomepageStyle.sortingGuide}>
+        <article>
+
+          <h2>Din guide til sortering</h2>
+          <p>Her kan du se hvordan du skal sortere og hvad der skal i hvilke beholdere.</p>
+          <p>Du får også tips og tricks til, hvordan du gør det nemt at sortere hjemme hos dig.</p>
+          <div>
             <Button
               text={'Bestil nu'}
               bgColor={'var(--greenBlue)'} />
@@ -55,30 +54,22 @@ export function Homepage() {
               bgColor={'var(--white)'}
               txtColor={'var(--green)'}
               border={'1px solid'} />
-          </article>
+          </div>
+        </article>
+        <img src={sortingGuide} alt="affald" />
+      </section>
 
-          <img src={sortingGuide} alt="affald" />
-        </section>
 
-
-        <section className={HomepageStyle.sortingGuide}>
-          <img src={orderContainer} alt="affald" />
-          <article>
-
-            <h2>Bestil din nye affaldsbeholder</h2>
-            <p>
-              When an unknown printer took a galley of type and scramble it to
-            </p>
-            <p>
-              make a type specimen book. It has survived not only
-            </p>
-            <Button
-              text={'Bestil nu'}
-              bgColor={'var(--greenBlue)'} />
-
-          </article>
-
-        </section>
+      <section className={HomepageStyle.sortingGuide}>
+        <img src={orderContainer} alt="affald" />
+        <article>
+          <h2>Bestil din nye affaldsbeholder</h2>
+          <p>Mangler du en affalds container eller har du altid mere restaffald, end der kan være i din container?</p>
+          <p>Her kan du skifte størrelse eller tilføje en ekstra container til restaffald.</p>
+          <Button
+            text={'Bestil nu'}
+            bgColor={'var(--greenBlue)'} />
+        </article>
       </section>
     </main>
   )

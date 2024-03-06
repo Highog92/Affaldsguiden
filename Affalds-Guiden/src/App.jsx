@@ -8,6 +8,7 @@ import { OrderContainer } from './Pages/OrderContainer';
 import { Login } from './Pages/Login';
 import { SearchPage } from './Pages/SearchPage';
 import { SortingDetailsPage } from './Pages/SortingDetailsPage';
+import { SignUpPage } from './Pages/SignIn';
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
             <Route path="/recyclingstations" element={<RecyclingStations title='Recycling stations' />} />
             <Route path="/ordercontainer" element={<OrderContainer title='Order Container' />} />
             <Route path="/login" element={<Login title='Login' />} />
-            
+            <Route path="/signin" element={<SignUpPage title='Sign In' />} />
+
             <Route path="/searchpage/:searchWord" element={<SearchPage />} />
             <Route path="/searchpage" element={<SearchPage />} />
           </Route>

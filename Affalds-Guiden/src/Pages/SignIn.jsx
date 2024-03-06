@@ -11,11 +11,11 @@ export function SignUpPage() {
         event.preventDefault()
 
         // Nødvendige variabler for at kunne oprette en bruger. 
-        const activeValue = true;
+        const is_Active = 1;
         const org_idValue = 1;
         const refresh_tokenValue = "1234";
         // 2 for at lave som kunde
-        const groupsValue = 2;
+        const groupsValue = 1;
 
 
         let url = "http://localhost:3000/users"

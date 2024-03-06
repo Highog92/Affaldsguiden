@@ -1,0 +1,14 @@
+.stationsCard {
+
+    border-radius: 5px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.123);
+    background-color: var(--white);
+    img {
+        width: 100%;
+    }
+
+    address {
+        
+        padding: 20px;
+    }
+}

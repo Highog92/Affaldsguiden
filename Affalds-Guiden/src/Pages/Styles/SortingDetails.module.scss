@@ -5,12 +5,34 @@
     margin: 50px 90px;
     padding: 30px;
     border-radius: 10px;
-    p{
+
+    p {
         margin: 10px 0;
     }
-    span{
+
+    span {
         border-radius: 5px;
         padding: 2px;
 
+    }
+}
+
+@media (max-width: 620px) {
+
+    .SortingDetails {
+        border: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+
+    .SortingDetails {
+        border: none;
+        margin: 0;
+        padding: 10px;
     }
 }

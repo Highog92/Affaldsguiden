@@ -1,4 +1,4 @@
-import sortingDetailsStyle from './SortingDetails.module.scss'
+import sortingDetailsStyle from './SortingDetailsCard.module.scss'
 import { useFetch } from '../../Hooks/useFetch';
 import { useState } from 'react';
 import { IoIosArrowDropupCircle } from "react-icons/io";

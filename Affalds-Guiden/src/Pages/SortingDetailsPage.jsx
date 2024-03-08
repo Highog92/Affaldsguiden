@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useFetch } from "../Hooks/useFetch";
 import sortingDetailsStyle from './Styles/SortingDetails.module.scss'
-import { SortingDetails } from "../Components/SortingDetails/SortingDetails";
+import { SortingDetails } from "../Components/SortingDetailsCard/SortingDetailsCard";
 import { Accordion } from "../Components/Accordion/Accordion";
 import { SearchBar } from "../Components/SearchBar/SearchBar";
 export const SortingDetailsPage = () => {

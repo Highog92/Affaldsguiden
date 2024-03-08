@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    margin: auto;
 
     a {
         display: flex;
         flex-direction: row;
         filter: drop-shadow(0px 0px 6px #6b6b6b);
-        
-        
+
+
         img {
             background-color: var(--green);
             border-radius: 0 20px 20px 0;
@@ -26,12 +26,31 @@
         z-index: 1;
         height: 40px;
         border-radius: 20px 0 0 20px;
-        padding: 10px;
+        padding: 0 0 0 30px;
         border: none;
         margin: 10px 0;
-        padding-right: 30px;
+        // width: 100%;
         filter: drop-shadow(0px 0px 6px #6b6b6b);
         background-color: var(--white);
 
     }
+}
+
+
+
+
+@media (max-width: 375px) {
+
+    .searchBar {
+        img {
+            margin: 0 10px 0 0;
+        }
+
+        input {
+            margin: 0 0 0 0;
+            width: 100%;
+        }
+    }
+
+
 }

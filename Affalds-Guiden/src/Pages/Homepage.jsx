@@ -1,6 +1,6 @@
 import { SlideShow } from "../Components/SlideShow/SlideShow"
 import { Button } from "../Components/Button/Button"
-import HomepageStyle from './Styles/HomepageStyle.module.scss'
+import HomepageStyle from './Styles/Homepage.module.scss'
 import { Link } from 'react-router-dom';
 import sortingGuide from '../assets/Images/Photos/small/skrald2.jpg'
 import orderContainer from '../assets/Images/Photos/small/containers.jpg'

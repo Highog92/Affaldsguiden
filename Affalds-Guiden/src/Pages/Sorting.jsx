@@ -1,4 +1,4 @@
-import sortingStyle from '../Pages/Styles/SortingPageStyle.module.scss'
+import sortingStyle from '../Pages/Styles/SortingPage.module.scss'
 import { SortingBox } from '../Components/SortingBox/SortingBox'
 import { useFetch } from '../Hooks/useFetch'
 import { SearchBar } from '../Components/SearchBar/SearchBar'

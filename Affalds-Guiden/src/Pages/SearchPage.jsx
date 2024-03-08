@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 import { useFetch } from "../Hooks/useFetch"
-import searchPageStyle from './Styles/SearchPageStyle.module.scss'
+import searchPageStyle from './Styles/SearchPage.module.scss'
 import { SearchBar } from "../Components/SearchBar/SearchBar"
 import { Accordion } from "../Components/Accordion/Accordion"
 export function SearchPage() {

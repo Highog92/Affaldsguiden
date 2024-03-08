@@ -1,4 +1,4 @@
-import slideShowStyle from './SlideShowStyle.module.scss'
+import slideShowStyle from './SlideShow.module.scss'
 import malerspande from '../../assets/Images/Slideshow/malerspande.jpg'
 import affaldSkov from '../../assets/Images/Slideshow/affald-skov-1.jpg'
 import affaldStrand from '../../assets/Images/Slideshow/affald-strand-2.jpg'

@@ -2,7 +2,12 @@ export function OrderContainer() {
 
     return (
         <section>
-Bestil container
-      </section>
+            <p>
+                Bestilling af containere
+            </p>
+            <p>
+                Kommer snart
+            </p>
+        </section>
     )
 }

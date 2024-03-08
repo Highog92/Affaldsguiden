@@ -5,9 +5,10 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 
 
 // Accordion modtaget og lavet af Kamilla. Har selv lavet modifikationer
+// Siden den er hentet fra:
+//https://github.com/Eon4/CodeChallenge/blob/main/code/src/Components/Accordion/Accordion.jsx
 
 export const Accordion = ({ id, bgColor, trashTypeIcon, subTitleImg, subTitleIcon, altTxt, title, subTitle, allowed, notAllowed }) => {
-    //https://github.com/Eon4/CodeChallenge/blob/main/code/src/Components/Accordion/Accordion.jsx
     const [isOpen, setIsOpen] = useState(false);
 
     function toggle() {

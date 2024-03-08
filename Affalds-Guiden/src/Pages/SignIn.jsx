@@ -6,6 +6,7 @@ import logo from '../assets/Svgs/Logo.svg'
 export function SignUpPage() {
 
     async function handleSignup(event) {
+
         
         // Denne linje gør at siden ikke opdatere når man trykker på submit
         event.preventDefault()

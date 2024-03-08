@@ -24,8 +24,8 @@ export const Accordion = ({ id, bgColor, trashTypeIcon, subTitleImg, subTitleIco
             {isOpen &&
                 <figcaption>
                     <h3>{subTitle}</h3>
-                    {/* <img src={subTitleImg} alt="Title image" /> */}
-                    {/*  <img src={subTitleIcon} alt="Title icon" /> */}
+                    <img src={subTitleImg} alt="Title image" />
+                     <img src={subTitleIcon} alt="Title icon" />
                     <h3>Hvad modtager vi?</h3>
                     <hr />
                     <p>Station: {allowed}</p>

@@ -14,8 +14,8 @@ export function Navigation() {
                     <Link to='/sorting'><li>Sortering</li></Link>
                     <Link to='/recyclingstations'><li>Genbrugsstationer</li></Link>
                     <Link to='/ordercontainer'><li>Bestil beholder</li></Link>
-                    <Link to='/login'><img src={loginIcon} alt="Login ikon" /></Link>
                 </ul>
+                    <Link to='/login'><img src={loginIcon} alt="Login ikon" /></Link>
             </nav>
         </section>
     )

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import { IoIosArrowDropdownCircle } from "react-icons/io";
 
-export function SortingDetails({ id, bgColor, trashTypeIcon, subTitleImg, subTitleIcon, altTxt, title, subTitle, allowed, notAllowed }) {
+export function SortingDetails({ id, imgSrc, bgColor, trashTypeIcon, subTitleImg, subTitleIcon, altTxt, title, subTitle, allowed, notAllowed }) {
 
     const sortingCategoryDetails = useFetch(`http://localhost:3000/category/details/${id}`)
 
@@ -25,8 +25,8 @@ export function SortingDetails({ id, bgColor, trashTypeIcon, subTitleImg, subTit
             {isOpen &&
                 <figcaption>
                     <h3>{subTitle}</h3>
-                    {/* <img src={subTitleImg} alt="Title image" /> */}
-                    {/* <img src={subTitleIcon} alt="Title icon" /> */}
+                    <img src={subTitleImg} alt="Title image" />
+                    <img src={subTitleIcon} alt="Title icon" />
                     <h3>Hvad modtager vi?</h3>
                     <hr />
                     <p>Station: {allowed}</p>

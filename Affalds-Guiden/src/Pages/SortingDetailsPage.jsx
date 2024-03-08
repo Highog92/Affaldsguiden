@@ -9,12 +9,12 @@ export const SortingDetailsPage = () => {
     const { sortingId } = useParams()
 
     const sortingCategory = useFetch(`http://localhost:3000/section/${sortingId}`)
-    // console.log(sortingCategory);
+    console.log(sortingCategory);
 
     // ---------------------------
     const sortingType = useFetch(`http://localhost:3000/category/details/2`)
     // ----------------------------
-    console.log(sortingType, "Type");
+    // console.log(sortingType, "Type");
 
 
     return (
@@ -26,6 +26,7 @@ export const SortingDetailsPage = () => {
                     <SortingDetails
                         key={item.id}
                         id={item.id}
+                        imgSrc={item.filepath}
                         title={item.title}
                         trashTypeIcon={item.icon_filepath}
                         altTxt={item.image_filename}

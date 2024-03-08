@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 
-// Taget fra tidligere opgave som Kasper har lavet
+// Taget fra tidligere opgave som Kasper har lavet.
 
 export const UserContext = createContext();
 

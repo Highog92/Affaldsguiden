@@ -36,7 +36,7 @@ export function Login() {
       let res = await fetch(url, options)
       let data = await res.json()
       setUserData(data.user)
-      setMessage("Du har sgu logget ind :)")  // Feedbacket på om man er logget ind
+      setMessage("Yay, du har logget ind :)")  // Feedbacket på om man er logget ind
 
     } catch (err) {
 

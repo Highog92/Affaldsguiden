@@ -5,15 +5,33 @@
     align-items: center;
     text-align: center;
     padding: 10px;
-    
+
+    a {
+        display: flex;
+        flex-direction: row;
+        filter: drop-shadow(0px 0px 6px #6b6b6b);
+        
+        
+        img {
+            background-color: var(--green);
+            border-radius: 0 20px 20px 0;
+            height: 30px;
+            padding: 5px;
+            margin: 0;
+            width: 70px;
+        }
+    }
+
     input {
+        z-index: 1;
         height: 40px;
-        border-radius: 20px;
+        border-radius: 20px 0 0 20px;
         padding: 10px;
         border: none;
-        margin: 10px;
+        margin: 10px 0;
         padding-right: 30px;
         filter: drop-shadow(0px 0px 6px #6b6b6b);
-    }   
-}
+        background-color: var(--white);
 
+    }
+}

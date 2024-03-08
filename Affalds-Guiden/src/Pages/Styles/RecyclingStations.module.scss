@@ -2,7 +2,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     background-image: linear-gradient(var(--lightGreen), var(--white));
-    gap: 50px;
-    padding: 100px;
+    gap: 30px;
+    padding: 100px 100px 0 100px;
     margin: auto;
+}
+
+@media (max-width: 375px) {
+    .recyclingStations{
+        padding: 15px;
+    }
+
 }

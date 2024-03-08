@@ -9,6 +9,7 @@ import { Login } from './Pages/Login';
 import { SearchPage } from './Pages/SearchPage';
 import { SortingDetailsPage } from './Pages/SortingDetailsPage';
 import { SignUpPage } from './Pages/SignIn';
+import { ErrorPage } from './Pages/ErrorPage';
 
 function App() {
 
@@ -21,16 +22,21 @@ function App() {
             <Route index element={<Homepage title="Homepage" />} />
             <Route path="/homepage" element={<Homepage title="Homepage" />} />
 
-            <Route path="/sorting" element={<Sorting title='Sorting' />} />
-            <Route path="/sorting/:sortingId" element={<SortingDetailsPage title='Sorting Details' />} />
-            
+
+
             <Route path="/recyclingstations" element={<RecyclingStations title='Recycling stations' />} />
             <Route path="/ordercontainer" element={<OrderContainer title='Order Container' />} />
             <Route path="/login" element={<Login title='Login' />} />
             <Route path="/signin" element={<SignUpPage title='Sign In' />} />
 
-            <Route path="/searchpage/:searchWord" element={<SearchPage />} />
-            <Route path="/searchpage" element={<SearchPage />} />
+            <Route path="/searchpage/:searchWord" element={<SearchPage title={'Search word'} />} />
+            <Route path="/searchpage" element={<SearchPage title={'Search page'} />} />
+
+            {/* Dynamic Route */}
+            <Route path="/sorting" element={<Sorting title='Sorting' />} />
+            <Route path="/sorting/:sortingId" element={<SortingDetailsPage />} />
+            
+            <Route path="/*" element={<ErrorPage />} title="error" />
           </Route>
         </Routes>
       </BrowserRouter>

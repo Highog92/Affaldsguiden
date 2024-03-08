@@ -86,13 +86,16 @@
 @media (max-width: 375px) {
 
     .findStations {
-        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
         text-align: center;
-        padding: 15px 0;
-
+        left: 0;
+        margin: 10px;
         figcaption {
 
             div {
+
                 flex-direction: column;
 
             }
@@ -110,7 +113,11 @@
     .sortingGuide {
         margin: auto;
         flex-direction: column-reverse;
+        padding: 0 2%;
 
+        h2{
+            font-size: 1.5rem;
+        }
         button {
             width: 100%;
             margin: 15px 0;
@@ -120,5 +127,8 @@
             padding: 0;
         }
 
+        img {
+            width: 100%;
+        }
     }
 }

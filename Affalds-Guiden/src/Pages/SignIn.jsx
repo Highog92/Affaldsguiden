@@ -6,7 +6,7 @@ import logo from '../assets/Svgs/Logo.svg'
 export function SignUpPage() {
 
     async function handleSignup(event) {
-
+        
         // Denne linje gør at siden ikke opdatere når man trykker på submit
         event.preventDefault()
 
@@ -21,13 +21,13 @@ export function SignUpPage() {
         let url = "http://localhost:3000/users"
 
         let body = new URLSearchParams()
-        body.append('firstname', event.target.username.value)
+        body.append('firstname', event.target.firstname.value)
         body.append('lastname', event.target.lastname.value)
         body.append('email', event.target.email.value)
         body.append('password', event.target.password.value)
 
 
-        body.append("is_active", activeValue);
+        body.append("is_active", is_Active);
         body.append("org_id", org_idValue);
         body.append("refresh_token", refresh_tokenValue);
         body.append("groups", groupsValue);

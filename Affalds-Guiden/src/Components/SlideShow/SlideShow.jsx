@@ -14,7 +14,7 @@ export function SlideShow() {
             indicators={false}
             navButtonsAlwaysInvisible={false}
             navButtonsAlwaysVisible={true}
-            height={800}
+            
         >
             <img src={affaldSkov} alt="affaldSkov" />
             <img src={affaldStrand} alt="affaldStrand" />

@@ -1,9 +1,8 @@
 import { useParams } from "react-router-dom"
 import { useFetch } from "../Hooks/useFetch"
-import { SearchCard } from "../Components/SearchCard/SearchCard"
 import searchPageStyle from './Styles/SearchPageStyle.module.scss'
 import { SearchBar } from "../Components/SearchBar/SearchBar"
-
+import { Accordion } from "../Components/Accordion/Accordion"
 export function SearchPage() {
 
     // Slug 
@@ -17,18 +16,20 @@ export function SearchPage() {
         <section className={searchPageStyle.searchPage}>
             <SearchBar />
 
-            {/* Af GPT */}
-            {searchResult && searchResult.data && searchResult.data.map((item) => (
+            {searchResult && searchResult.data && searchResult.data.map((item) => {
+                return (
+                    <>
+                        <Accordion
+                            key={item.id}
+                            title={item.title}
+                            trashTypeIcon={item.icon_filepath}
+                            altTxt={item.icon_filename} />
+                        
+                    </>
 
-                <SearchCard
-                    key={item.id}
-                    title={item.title}
-                    trashTypeIcon={item.icon_filepath}
-                    altTxt={item.icon_filename}
-                    />
-
-            ))}
-        </section>
+                )
+            })}
+        </section >
     )
 
 }

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+// Taget fra tidligere opgave som Kasper har lavet
+
 export const useFetch = (url) => {
   const [data, setData] = useState();
 

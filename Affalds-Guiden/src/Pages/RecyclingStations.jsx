@@ -13,9 +13,8 @@ import sheldon from '../assets/Images/Maps/sheldon.png'
 export function RecyclingStations() {
 
     const organisations = useFetch(`http://localhost:3000/orgs?attributes=id,name,address,zipcode,city`)
-
-    const maps = [engvej, hjedsbaekvej, moelholmvej, oesteruttrupvej, overbaekken, skovgaardsvej,sheldon];
-    // , 
+    console.log(organisations);
+    const maps = [oesteruttrupvej, moelholmvej, hjedsbaekvej, overbaekken, engvej, skovgaardsvej, sheldon];
     return (
         <section className={RecyclingStationsStyle.recyclingStations}>
 
@@ -25,6 +24,7 @@ export function RecyclingStations() {
                     <StationsCard
                         key={item.id}
                         map={maps[index]}
+                        name={item.name}
                         location={item.location}
                         address={item.address}
                         zipcode={item.zipcode}

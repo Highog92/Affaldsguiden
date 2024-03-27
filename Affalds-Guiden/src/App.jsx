@@ -21,26 +21,19 @@ function App() {
             {/* De to tomme paths=("/") er en nødvendighed ellers bliver det første man ser en blank outlet */}
             <Route index element={<Homepage title="Homepage" />} />
             <Route path="/homepage" element={<Homepage title="Homepage" />} />
-
-
-
             <Route path="/recyclingstations" element={<RecyclingStations title='Recycling stations' />} />
             <Route path="/ordercontainer" element={<OrderContainer title='Order Container' />} />
             <Route path="/login" element={<Login title='Login' />} />
             <Route path="/signin" element={<SignUpPage title='Sign In' />} />
-
             <Route path="/searchpage/:searchWord" element={<SearchPage title={'Search word'} />} />
             <Route path="/searchpage" element={<SearchPage title={'Search page'} />} />
 
-            
-            <Route path="/sorting" element={<Sorting title='Sorting' />} />
-            
             {/* Dynamic Route */}
             {/* Tilføjer en variabel hvor man kan hente en variabel værdi fra url'en */}
             {/* når man går ind på siden kan man få fat i værdien med useParams funktionen */}
             {/* Lige meget hvad der står efter /: på sortingId's plads så vil den forblive på SortingDetailsPage siden */}
-            <Route path="/sorting/:sortingId" element={<SortingDetailsPage />} />
-            
+            <Route path="/sorting/:sortingId" element={<SortingDetailsPage />} />            
+            <Route path="/sorting" element={<Sorting title='Sorting' />} />
             <Route path="/*" element={<ErrorPage />} title="error" />
           </Route>
         </Routes>

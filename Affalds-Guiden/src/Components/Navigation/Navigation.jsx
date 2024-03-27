@@ -1,7 +1,9 @@
 import navStyle from './Navigation.module.scss'
-import { Link } from 'react-router-dom';
 import logo from '../../assets/Svgs/Logo.svg'
 import loginIcon from '../../assets/Svgs/LoginIcon.svg'
+
+
+import { Link } from 'react-router-dom';
 export function Navigation() {
 
     return (
@@ -16,7 +18,7 @@ export function Navigation() {
                     <Link to='/ordercontainer'><li>Bestil beholder</li></Link>
                 </ul>
                     <Link to='/login'><img src={loginIcon} alt="Login ikon" /></Link>
-            </nav>
+            </nav> 
         </section>
     )
 }

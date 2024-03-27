@@ -13,7 +13,7 @@ import sheldon from '../assets/Images/Maps/sheldon.png'
 export function RecyclingStations() {
 
     const organisations = useFetch(`http://localhost:3000/orgs?attributes=id,name,address,zipcode,city`)
-    console.log(organisations);
+    console.log(organisations, "Adresser");
     const maps = [oesteruttrupvej, moelholmvej, hjedsbaekvej, overbaekken, engvej, skovgaardsvej, sheldon];
     return (
         <section className={RecyclingStationsStyle.recyclingStations}>

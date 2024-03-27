@@ -4,7 +4,6 @@ import HomepageStyle from './Styles/Homepage.module.scss'
 import { Link } from 'react-router-dom';
 import sortingGuide from '../assets/Images/Photos/small/skrald2.jpg'
 import orderContainer from '../assets/Images/Photos/small/containers.jpg'
-import Lines from '../assets/Svgs/Lines.svg'
 
 export function Homepage() {
 
